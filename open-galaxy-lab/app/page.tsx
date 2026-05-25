@@ -4,6 +4,7 @@ import { AboutSection } from '../components/sections/AboutSection'
 import { EcosystemPreviewSection } from '../components/sections/EcosystemPreviewSection'
 import { HeroSection } from '../components/sections/HeroSection'
 import { TimelineSection } from '../components/sections/TimelineSection'
+import { InteractiveOrbitSection } from '../components/sections/InteractiveOrbitSection' // Added import
 import { PageTransition } from '../components/ui/PageTransition'
 
 export default function Home() {
@@ -24,12 +25,16 @@ export default function Home() {
         <div className="relative z-10">
           <EcosystemPreviewSection />
         </div>
+
+        {/* 🌌 Spinning Orbit Section Integrated Here */}
+        <div className="relative z-10 w-full overflow-hidden">
+          <InteractiveOrbitSection />
+        </div>
         
         <div className="relative z-10">
           <TimelineSection />
         </div>
     
-        
         <div className="relative z-10">
           <AboutSection />
         </div>
